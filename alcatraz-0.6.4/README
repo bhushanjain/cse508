@@ -1,0 +1,35 @@
+The goal of alcatraz is to enable safe execution of untrusted
+code. Unlike sandboxing approaches that restrict file access, alcatraz
+allows untrusted code to access the entire file system. This factor
+enables most programs to run successfully under alcatraz, as opposed
+to experiencing runtime aborts/exceptions due to security violations.
+
+Alcatraz is released under GPL; see the file COPYING for details. 
+
+Alcatraz is a plug-in of etrace, which is available at the download area
+of Secure Systems Lab of Stony Brook University
+(http://seclab.cs.stonybrook.edu). Before installing alcatraz, the
+ETRACEDIR environment variable needs be be set to the directory where
+etrace is installed. For example, if the etrace is in /usr/local/bin,
+the ETRACEDIR needs to be set to '/usr/local'. Read the INSTALL file
+for installation instructions of alcatraz.  
+
+The directory GUI contains the java file of Alcatraz's GUI. A
+pre-compiled jar file, alcatrazui.jar, is included in the distribution
+for convenience. If you want to rebuild the jar file by yourself, run
+the following commands:
+
+    javac *.java
+    jar cvf alcatrazui.jar *.class
+
+See the file ChangeLog and NEWS for information on recent changes. 
+
+See the file AUTHORS to see who has contributed to alcatraz. 
+
+The latest version of alcatraz is available in the download area of the
+homepage of Secure Systems Lab, Stony Brook University: 
+http://seclab.cs.stonybrook.edu. 
+
+Please send bug reports and enhancements to Zhenkai Liang
+<zliang@cs.stonybrook.edu>.  
+

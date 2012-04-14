@@ -1,0 +1,32 @@
+Etrace is an extensible system call interposition framework. It
+intercepts system calls made by the monitored process and all its
+children. For each system call, etrace stops the calling process at
+the entry and exit of the system call. Then extensions are
+called. Extensions are hand-written or generated from a policy
+specification language, BMSL. Sample extensions include sandboxing
+policies and Alcatraz. In order to facilitate the access of system
+call information, etrace provides a simple interface that hides
+low-level details.  
+
+Etrace is designed to be portable across platforms. It uses a C++
+classes to encapsulate all architecture-dependent details. Porting
+etrace to another platform only involves rewriting the class using
+mechanisms provided by the new platform. In the current
+implementation, Linux on IA-32 architecture is supported via the
+ptrace interface of Linux. 
+
+Etrace is released under GPL; see the file COPYING for details. 
+
+Read the INSTALL file for installation instructions. 
+
+See the file ChangeLog and NEWS for information on recent changes. 
+
+See the file AUTHORS to see who has contributed to etrace. 
+
+The latest version of etrace is available in the download area of the
+homepage of Secure Systems Lab, Stony Brook University: 
+http://seclab.cs.stonybrook.edu. 
+
+Please send bug reports and enhancements to Zhenkai Liang
+<zliang@cs.stonybrook.edu>.  
+

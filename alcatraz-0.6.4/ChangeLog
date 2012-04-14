@@ -1,0 +1,17 @@
+03/24/06: Zhenkai Liang <zliang@cs.stonybrook.edu>
+	Fixed an error in execution newly created binaries. 
+	Version 0.6.4 released. 
+	
+02/08/06: Zhenkai Liang <zliang@cs.stonybrook.edu>
+	Sandboxing is moved into a separate extension, libconfinement.so. 
+	X applications is restricted to another server. 
+	Version 0.6.2 released. 
+
+09/27/05: Zhenkai Liang <zliang@cs.stonybrook.edu>
+	Autotools are incorporated. Code is cleaned up for release. 
+	Version 0.6.1 released. 
+
+09/07/04: Zhenkai Liang <zliang@cs.stonybrook.edu>
+	Rewritten the function to map a filename to the name in modification 
+	cache.
+

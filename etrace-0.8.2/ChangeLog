@@ -1,0 +1,35 @@
+01/26/06: Zhenkai Liang <zliang@cs.stonybrook.edu> 
+        Added procInSession to Extension interface.
+	Verified types in LinuxTypes.h.
+	Changed project name to etrace.
+	Version 0.8.2 released.
+	
+09/26/05: Zhenkai Liang <zliang@cs.stonybrook.edu> 
+	Autotools are incorporated. 
+	Added terminate and processInSession to Extension interface. 	
+	Version 0.8.1 released. 
+
+05/23/05: Zhenkai Liang <zliang@cs.stonybrook.edu> 
+	Version 0.8.0 released.
+
+11/18/04: Zhenkai Liang <zliang@cs.stonybrook.edu>
+	Move the tracer base and architecture dependent library into a
+	shared library, and put it in the 'lib' directory. Both main.cpp
+	and extension libraries are linked with this shared library. 
+
+8/30/04: Zhenkai Liang <zliang@cs.stonybrook.edu>
+	Remove MonitoredProc from the argument list of SysCallArg's 
+	constructure. Instead, make it a static member of the class, 
+	and initialize it before use. 
+
+	Don't set the MonitoredProc when creating an extension. It is done
+	when the extension is inserted into the list of a MonitoredProc.
+
+	MP is not the same across all processes, but the the ArchDep
+	object is the same. So move the pid to system call arg repr. 
+
+2/17/04: Zhenkai Liang <zliang@cs.stonybrook.edu>
+	In PersistArg::unserialize, set the buf_ to 0 if the size is 0,
+	otherwise the buf_ will have random value, which will lead to
+	segmentation errors. 
+
